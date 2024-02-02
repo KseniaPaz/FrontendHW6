@@ -46,15 +46,20 @@ body{
 .top{
     background-color: #F1E4E6;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 64px;
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
 }
 
-.brand_group{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-top: 290px;
-    margin-bottom: 381px;
+.top_image{
+    max-width: 700px;
+}
+
+.brand_image{
+    max-width: 350px;
 }
 
 .offer{
@@ -67,36 +72,9 @@ body{
 
 }
 
-.item_offer_woman{
-    padding-top: 105px;
-    padding-bottom: 105px;
-    display: flex;
+.image_big{
+    display: grid;
     justify-content: center;
-    background: url(img/offer1.svg);
-}
-
-.item_offer_men{
-    padding-top: 105px;
-    padding-bottom: 105px;
-    display: flex;
-    justify-content: center;
-    background: url(img/offer2.svg);
-}
-
-.item_offer_kids{
-    padding-top: 105px;
-    padding-bottom: 105px;
-    display: flex;
-    justify-content: center;
-    background: url(img/offer3.svg);
-}
-
-.item_offer_big{
-    padding-top: 65px;
-    padding-bottom: 65px;
-    display: flex;
-    justify-content: center;
-    background: url(img/offer4.svg);
     grid-column: span 3;
 }
 
@@ -142,11 +120,6 @@ body{
     align-items: flex-start;
 }
 
-.image_item{
-    justify-content: center;
-    background: url(img/image2.svg);
-}
-
 .item_content{
     display: flex;
     flex-direction: column;
@@ -187,4 +160,55 @@ body{
 .button{
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+@media (max-width: 1024px){
+
+    .header{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top{
+        display: flex;
+        justify-content: center;
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .top_image{
+        max-width: 386px;
+    }
+
+    .brand_image{
+        max-width: 230px;
+    }
+
+    .offer{
+        display: grid;
+        grid-template-columns: repeat(3, 232px);
+        gap: 19px;
+        justify-content: center;
+        padding-top: 65px;
+        padding-bottom: 96px;
+    }
+
+    .image{
+        width: 232px;
+    }
+
+    .image_big{
+        width: 734px;
+    }
+
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        gap: 19px;
+    }
+
+    .item_image{
+        max-width: 360px;
+    }
+
 }
