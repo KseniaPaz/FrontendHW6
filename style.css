@@ -211,4 +211,45 @@ body{
         max-width: 360px;
     }
 
+    @media (max-width: 767px){
+
+        .header{
+            max-width: 767px;
+
+        }
+
+        .top_image{
+            display: none;
+        }
+
+        .brand_image{
+            margin-bottom: 150px;
+            margin-top: 150px;
+        }
+
+        .offer{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            gap: 19px;
+            padding-top: 65px;
+            padding-bottom: 96px;
+        }
+    
+        .image{
+            width: 343px;
+        }
+    
+        .image_big{
+            width: 343px;
+        }
+
+        .items{
+            display: grid;
+            grid-template-columns: repeat(1, 359px);
+            gap: 19px;
+        }
+    }
+
 }
