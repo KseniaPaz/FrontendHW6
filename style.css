@@ -354,7 +354,6 @@ h2 span{
     position: relative
 }
 
-
 .add_to_cart{
     position: absolute;
     top: 188px;
@@ -388,7 +387,6 @@ h2 span{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-
 }
 
 .price{
@@ -422,7 +420,6 @@ h2 span{
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 .browse_button:hover{
@@ -521,7 +518,6 @@ h2 span{
     letter-spacing: 0em;
     text-align: center;
     color: #222224;
-
 }
 
 .subscribe_heading{
@@ -540,8 +536,6 @@ h2 span{
     justify-content: center;
 }
 
-
-
 .input{
     padding-top: 18px;
     padding-bottom: 17px;
@@ -550,7 +544,6 @@ h2 span{
     background: transparent url(img/Rounded_Rectangle.svg);
     border: none;
 }
-
 
 .subscribe_button{
     background: transparent url(img/button_rectangle.svg);
@@ -571,7 +564,6 @@ h2 span{
     filter: brightness(70%);
 }
 
-
 .footer{
     background: #222224;
     padding-top: 24px;
@@ -591,8 +583,6 @@ h2 span{
     letter-spacing: 0em;
     text-align: left;
     color: #FBFBFB;
-
-
 }
 
 .social_icons{
@@ -602,19 +592,10 @@ h2 span{
     gap: 7px;
 }
 
-
-
 .social_link:hover path{
     stroke: white;
     fill: #F16D7F;
 }
-
-
-
-
-
-
-
 
 
 
@@ -636,8 +617,24 @@ h2 span{
         max-width: 386px;
     }
 
-    .brand_image{
-        max-width: 230px;
+    .brand{
+        max-width: 311px;
+    }
+
+    .brand_title{
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 53px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .lux{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
     }
 
     .offer{
@@ -653,8 +650,18 @@ h2 span{
         width: 232px;
     }
 
+    .offer_text{
+        width: 232px;
+        height: 167px;
+    }
+
     .image_big{
         width: 734px;
+    }
+
+    .offer_text_big{
+        width: 734px;
+        height: 116px;
     }
 
     .items{
@@ -667,6 +674,33 @@ h2 span{
         max-width: 360px;
     }
 
+    .info_section{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .info_article{
+        width: 360px;
+    }
+
+    .subscribe_section{
+        background-image: url(img/photo_subscribe.svg);
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 448px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer{
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+        justify-content: space-between;
+        gap: 0;
+    }
+
     @media (max-width: 767px){
 
         .header{
@@ -674,13 +708,41 @@ h2 span{
 
         }
 
+        .person{
+            display: none;
+        }
+
+        .basket_full{
+            display: none;
+        }
+
+        .top{
+            height: 363px;
+        }
+
         .top_image{
             display: none;
         }
 
-        .brand_image{
+        .brand{
             margin-bottom: 150px;
             margin-top: 150px;
+        }
+
+        .brand_title{
+            font-size: 38px;
+            font-weight: 900;
+            line-height: 46px;
+        }
+
+        .lux{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        .rectangle{
+            height: 80px;
         }
 
         .offer{
@@ -696,9 +758,25 @@ h2 span{
         .image{
             width: 343px;
         }
+
+        .offer_text{
+            height: 247px;
+            width: 343px;
+        }
     
         .image_big{
             width: 343px;
+            height: 111px;
+        }
+
+        .offer_text_big{
+            width: 343px;
+            height: 111px;
+        }
+
+        .content{
+            margin-left: 9px;
+            margin-right: 9px;
         }
 
         .items{
@@ -706,6 +784,48 @@ h2 span{
             grid-template-columns: repeat(1, 359px);
             gap: 19px;
         }
-    }
 
+        .item_title{
+            margin-left: 9px;
+        }
+
+        .text{
+            margin-left: 9px;
+        }
+
+        .price{
+            margin-left: 9px;
+        }
+
+        .subscribe_section{
+            max-width: 767;
+            height: 550px;
+            background-image: url(img/photo_subscribe2.svg);
+        }
+
+        .subscribe_text{
+            width: auto;
+            max-width: 360px;
+        }
+
+        .subscribe_heading{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        .input{
+            padding-right: 0;
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 40px;
+            padding-top: 43px;
+            padding-bottom: 9px;
+        }
+    }
 }
